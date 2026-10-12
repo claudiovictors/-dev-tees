@@ -127,7 +127,6 @@ A practical split:
 ├── index.html                 # entry point, redirects to the store
 ├── public/
 │   ├── logo.svg               # mark used at the top of this README
-│   ├── donate.svg             # donate button
 │   ├── home.html
 │   ├── products.html
 │   ├── productview.html
@@ -143,10 +142,10 @@ A practical split:
 
 ## Support
 
-If DEV TEES saves you a weekend of layout work, you can buy me a coffee.
+If DEV TEES saves you a weekend of layout work, you can buy me a coffee. ☕
 
 <p align="center">
-  <a href="https://www.paypal.me/YOUR_PAYPAL_ME_USERNAME">
-    <img src="public/donate.svg" alt="Support with PayPal" width="236" height="48">
+  <a href="https://www.buymeacoffee.com/claudio.dev">
+    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=claudio.dev&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" height="48">
   </a>
 </p>
