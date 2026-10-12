@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt Heavyweight Raw Boxy | DEV TEES</title>
+  <meta name="description" content="Camiseta masculina e unissexo com gramatura pesada 260g em 100% algodão biológico penteado. Caimento boxy impecável.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER START -->
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__mobile-toggle" data-drawer-open aria-label="Abrir menu de navegação" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <a href="home.html" class="header__brand">
+        DEV TEES
+        <span class="header__brand-dot"></span>
+      </a>
+
+      <nav class="header__nav" aria-label="Navegação Principal">
+        <a href="home.html" class="header__nav-link">Início</a>
+        <a href="products.html" class="header__nav-link active">Produtos</a>
+        <a href="products.html?categoria=novidades" class="header__nav-link">Novidades</a>
+        <a href="products.html?categoria=mais-vendidos" class="header__nav-link">Mais Vendidos</a>
+        <a href="home.html#contacto" class="header__nav-link">Contacto</a>
+      </nav>
+
+      <form class="header__search-form" action="products.html" method="get">
+        <input type="search" name="q" class="header__search-input" placeholder="Pesquisar camisetas..." aria-label="Pesquisar produtos">
+        <button type="submit" class="header__search-btn" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+
+      <div class="header__actions">
+        <a href="cart.html" class="icon-btn" aria-label="Ver carrinho de compras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-7z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">2</span>
+        </a>
+
+        <a href="login.html" class="icon-btn icon-btn--account" aria-label="Minha conta de cliente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MOBILE DRAWER START -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu móvel lateral">
+    <div class="mobile-drawer__header">
+      <span class="header__brand">DEV TEES</span>
+      <button class="icon-btn" data-drawer-close aria-label="Fechar menu lateral">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer__body">
+      <form class="mobile-drawer__search" action="products.html" method="get">
+        <input type="search" name="q" placeholder="Buscar camiseta...">
+        <button type="submit" aria-label="Executar busca">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </form>
+
+      <nav class="mobile-drawer__nav">
+        <a href="home.html" class="mobile-drawer__link">
+          <span>Início</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="products.html" class="mobile-drawer__link active">
+          <span>Todos os Produtos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="products.html?categoria=oversized" class="mobile-drawer__link">
+          <span>Oversized Fit</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="products.html?categoria=classicas" class="mobile-drawer__link">
+          <span>Básicas Premium</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="orders.html" class="mobile-drawer__link">
+          <span>Meus Pedidos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="home.html#contacto" class="mobile-drawer__link">
+          <span>Fale Conosco</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer__footer">
+      <a href="login.html" class="btn btn--primary btn--full btn--sm">Entrar na Conta</a>
+      <a href="register.html" class="btn btn--outline btn--full btn--sm">Criar Cadastro</a>
+    </div>
+  </aside>
+  <!-- MOBILE DRAWER END -->
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container section">
+
+      <!-- Breadcrumbs -->
+      <nav aria-label="Navegação de trilha" style="margin-bottom: 24px; font-size: 0.813rem; color: var(--text-muted); display:flex; gap: 8px; align-items:center;">
+        <a href="home.html" style="color: var(--text-muted);">Início</a>
+        <span>/</span>
+        <a href="products.html" style="color: var(--text-muted);">Camisetas</a>
+        <span>/</span>
+        <span style="color: var(--primary); font-weight: 600;">Heavyweight Raw Boxy</span>
+      </nav>
+
+      <!-- Product Detail Grid -->
+      <article class="product-detail">
+
+        <!-- Gallery -->
+        <div class="gallery">
+          <div class="gallery__thumbs" aria-label="Miniaturas da galeria">
+            <div class="gallery__thumb active">
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=400&auto=format&fit=crop" alt="Vista Frontal - T-shirt Raw Boxy">
+            </div>
+            <div class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=400&auto=format&fit=crop" alt="Vista Lateral - T-shirt Raw Boxy">
+            </div>
+            <div class="gallery__thumb">
+              <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=400&auto=format&fit=crop" alt="Detalhe do Tecido e Gola">
+            </div>
+          </div>
+
+          <div class="gallery__main">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop" alt="T-Shirt Heavyweight Raw Boxy 260g">
+          </div>
+        </div>
+
+        <!-- Product Info & Purchase Form -->
+        <div class="product-info">
+          <div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom: 8px;">
+              <span class="badge badge--dark">Edição 2026</span>
+              <span class="product-info__sku">Ref: KTZ-260-RAW</span>
+            </div>
+            <h1 class="product-info__title">T-Shirt Heavyweight Raw Boxy</h1>
+          </div>
+
+          <div class="product-info__prices">
+            <span class="product-info__price">18.500 Kz</span>
+            <span class="badge badge--delivered">Em Stock para Entrega Imediata</span>
+          </div>
+
+          <p class="product-info__desc">
+            Desenvolvida em malha pura de 260 GSM com toque encorpado que não amassa fácil e mantém a estrutura após dezenas de lavagens. Gola canelada de 2.5cm sem deformação e costuras duplas nos ombros.
+          </p>
+
+          <!-- Form de seleção de opções -->
+          <form action="cart.html" method="get" style="display:flex; flex-direction:column; gap:24px;">
+
+            <!-- Seleção de Cor -->
+            <div class="option-group">
+              <span class="option-group__label">
+                <span>Cor Selecionada</span>
+                <span class="option-group__selected-name">Cru / Raw Off-White</span>
+              </span>
+              <div class="radios-colors">
+                <label class="radio-color">
+                  <input type="radio" name="color" value="raw" checked>
+                  <span class="radio-color__visual" style="background-color: #f5f5f0;" title="Branco Cru"></span>
+                </label>
+                <label class="radio-color">
+                  <input type="radio" name="color" value="black">
+                  <span class="radio-color__visual" style="background-color: #111111;" title="Preto Ônix"></span>
+                </label>
+                <label class="radio-color">
+                  <input type="radio" name="color" value="charcoal">
+                  <span class="radio-color__visual" style="background-color: #3f3f46;" title="Grafite"></span>
+                </label>
+                <label class="radio-color">
+                  <input type="radio" name="color" value="olive">
+                  <span class="radio-color__visual" style="background-color: #4d5c4b;" title="Verde Oliva"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Seleção de Tamanho -->
+            <div class="option-group">
+              <span class="option-group__label">
+                <span>Tamanho</span>
+                <a href="#tabela" style="font-size:0.75rem; text-decoration:underline; text-transform:none; font-weight:500;">Guia de medidas</a>
+              </span>
+              <div class="radios-sizes">
+                <label class="radio-size">
+                  <input type="radio" name="size" value="S">
+                  <span class="radio-size__visual">S</span>
+                </label>
+                <label class="radio-size">
+                  <input type="radio" name="size" value="M" checked>
+                  <span class="radio-size__visual">M</span>
+                </label>
+                <label class="radio-size">
+                  <input type="radio" name="size" value="L">
+                  <span class="radio-size__visual">L</span>
+                </label>
+                <label class="radio-size">
+                  <input type="radio" name="size" value="XL">
+                  <span class="radio-size__visual">XL</span>
+                </label>
+                <label class="radio-size">
+                  <input type="radio" name="size" value="XXL">
+                  <span class="radio-size__visual">XXL</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Quantidade & Ações -->
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              <div class="option-group">
+                <span class="option-group__label">Quantidade</span>
+                <div class="quantity-control">
+                  <button type="button" class="quantity-control__btn" aria-label="Diminuir quantidade">−</button>
+                  <input type="number" name="qty" class="quantity-control__input" value="1" min="1" max="10" aria-label="Quantidade">
+                  <button type="button" class="quantity-control__btn" aria-label="Aumentar quantidade">+</button>
+                </div>
+              </div>
+
+              <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:8px;">
+                <button type="submit" class="btn btn--outline btn--lg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-7z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  Adicionar
+                </button>
+                <a href="checkout.html" class="btn btn--primary btn--lg">
+                  Comprar Agora
+                </a>
+              </div>
+            </div>
+          </form>
+
+          <!-- Accordion Tabs via <details> -->
+          <div class="accordion" id="tabela">
+            <details class="accordion__item" open>
+              <summary class="accordion__summary">
+                <span>Composição & Detalhes Técnicos</span>
+                <span>+</span>
+              </summary>
+              <div class="accordion__content">
+                <p>• 100% Algodão sustentável de fibra longa cardado e penteado.</p>
+                <p>• Gramatura pesada: 260g/m² (alta durabilidade e opacidade).</p>
+                <p>• Gola em ribana canelada 1x1 com pesponto reforçado.</p>
+                <p>• Pré-encolhimento em lavanderia industrial (variação máxima inferior a 1%).</p>
+                <p>• Etiqueta interna acetinada antialérgica estampada na gola.</p>
+              </div>
+            </details>
+
+            <details class="accordion__item">
+              <summary class="accordion__summary">
+                <span>Guia de Medidas (Centímetros)</span>
+                <span>+</span>
+              </summary>
+              <div class="accordion__content">
+                <table style="width:100%; border-collapse:collapse; font-size:0.813rem; text-align:left;">
+                  <thead>
+                    <tr style="border-bottom:1px solid var(--border);">
+                      <th style="padding:6px 0;">Tamanho</th>
+                      <th>Peito</th>
+                      <th>Comprimento</th>
+                      <th>Manga</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 0;">S</td><td>54 cm</td><td>70 cm</td><td>21 cm</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 0;">M</td><td>57 cm</td><td>73 cm</td><td>22 cm</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 0;">L</td><td>60 cm</td><td>76 cm</td><td>23 cm</td></tr>
+                    <tr style="border-bottom:1px solid var(--border);"><td style="padding:6px 0;">XL</td><td>63 cm</td><td>78 cm</td><td>24 cm</td></tr>
+                    <tr><td style="padding:6px 0;">XXL</td><td>66 cm</td><td>80 cm</td><td>25 cm</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <details class="accordion__item">
+              <summary class="accordion__summary">
+                <span>Envios & Políticas de Troca</span>
+                <span>+</span>
+              </summary>
+              <div class="accordion__content">
+                <p><strong>Luanda:</strong> Entrega em domicílio no mesmo dia ou até 24h úteis.</p>
+                <p><strong>Províncias (Benguela, Huambo, Lubango, etc.):</strong> Envio via transportadora ou correio expresso em 48h a 72h.</p>
+                <p><strong>Troca Grátis:</strong> Você tem até 14 dias para solicitar a substituição de numeração sem burocracia.</p>
+              </div>
+            </details>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- RELATED PRODUCTS SECTION -->
+      <section class="section" style="padding-bottom: 0;">
+        <div class="section__header">
+          <div>
+            <h2 class="section__title">Combine Com Outros Modelos</h2>
+            <p class="section__subtitle">Peças complementares com a mesma linha de caimento e paleta</p>
+          </div>
+          <a href="products.html" class="section__link">Ver todos</a>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Oversized Deep Black" loading="lazy">
+              <div class="product-card__quick-add"><span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span></div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #111111;"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Oversized Midnight Deep</a>
+              <span class="product-card__meta">Modelagem Boxy</span>
+              <div class="product-card__prices"><span class="product-card__price">17.000 Kz</span></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Essential Crew Olive" loading="lazy">
+              <div class="product-card__quick-add"><span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span></div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #4d5c4b;"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Essential Crew Olive</a>
+              <span class="product-card__meta">Algodão Pima</span>
+              <div class="product-card__prices"><span class="product-card__price">15.500 Kz</span></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Typo Studio Atelier" loading="lazy">
+              <div class="product-card__quick-add"><span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span></div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #1a1a1a;"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Typo Studio Atelier</a>
+              <span class="product-card__meta">Edição Numerada</span>
+              <div class="product-card__prices"><span class="product-card__price">19.500 Kz</span></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Pure White Basic" loading="lazy">
+              <div class="product-card__quick-add"><span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span></div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #ffffff;"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Pure White Classic</a>
+              <span class="product-card__meta">Básica 100% Penteada</span>
+              <div class="product-card__prices"><span class="product-card__price">14.500 Kz</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER START -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">DEV TEES</div>
+          <p class="footer__brand-desc">
+            Camisetas concebidas sob rigor técnico, caimento perfeito e estética minimalista em Angola. Criadas para durar estações.
+          </p>
+          <div class="footer__socials">
+            <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram da DEV TEES" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" class="footer__social-link" aria-label="Facebook da DEV TEES" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://wa.me" class="footer__social-link" aria-label="WhatsApp da DEV TEES" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Coleções</h4>
+          <ul class="footer__links">
+            <li><a href="products.html" class="footer__link">Todos os Modelos</a></li>
+            <li><a href="products.html?categoria=heavyweight" class="footer__link">Heavyweight 260g</a></li>
+            <li><a href="products.html?categoria=oversized" class="footer__link">Oversized Boxy</a></li>
+            <li><a href="products.html?categoria=basicas" class="footer__link">Essenciais Básicas</a></li>
+            <li><a href="products.html?categoria=promocoes" class="footer__link">Arquivo / Ofertas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Atendimento</h4>
+          <ul class="footer__links">
+            <li><a href="orders.html" class="footer__link">Acompanhar Pedido</a></li>
+            <li><a href="#" class="footer__link">Guia de Tamanhos</a></li>
+            <li><a href="#" class="footer__link">Política de Trocas</a></li>
+            <li><a href="#" class="footer__link">Envios para Províncias</a></li>
+            <li><a href="#" class="footer__link">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Showroom & Contacto</h4>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Rua Rainha Ginga, Edifício Kilamba, Luanda, Angola</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+244 923 000 111 / +244 945 222 333</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>atendimento@kwanzatees.ao</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 DEV TEES. Todos os direitos reservados. Feito com rigor em Angola.</p>
+        <div class="footer__payments">
+          <span class="payment-badge">Multicaixa Express</span>
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Transferência Bancária</span>
+          <span class="payment-badge">Pagamento na Entrega</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- BOTTOM NAV START -->
+  <nav class="bottom-nav" aria-label="Navegação inferior mobile">
+    <a href="home.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Início</span>
+    </a>
+    <a href="products.html" class="bottom-nav__item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      <span>Produtos</span>
+    </a>
+    <a href="cart.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-7z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      <span class="bottom-nav__badge">2</span>
+      <span>Carrinho</span>
+    </a>
+    <a href="orders.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+      <span>Pedidos</span>
+    </a>
+    <a href="login.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <span>Conta</span>
+    </a>
+  </nav>
+  <!-- BOTTOM NAV END -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>

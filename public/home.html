@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEV TEES | Camisetas Premium Minimalistas</title>
+  <meta name="description" content="Loja oficial de T-shirts essenciais e premium em Angola. Algodão penteado de alta gramagem com design atemporal.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER START -->
+  <header class="header">
+    <div class="container header__container">
+      <!-- Mobile hamburger toggle button -->
+      <button class="header__mobile-toggle" data-drawer-open aria-label="Abrir menu de navegação" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Brand Logo / Name -->
+      <a href="home.html" class="header__brand">
+        DEV TEES
+        <span class="header__brand-dot"></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="header__nav" aria-label="Navegação Principal">
+        <a href="home.html" class="header__nav-link active">Início</a>
+        <a href="products.html" class="header__nav-link">Produtos</a>
+        <a href="products.html?categoria=novidades" class="header__nav-link">Novidades</a>
+        <a href="products.html?categoria=mais-vendidos" class="header__nav-link">Mais Vendidos</a>
+        <a href="#contacto" class="header__nav-link">Contacto</a>
+      </nav>
+
+      <!-- Search Bar -->
+      <form class="header__search-form" action="products.html" method="get">
+        <input type="search" name="q" class="header__search-input" placeholder="Pesquisar camisetas..." aria-label="Pesquisar produtos">
+        <button type="submit" class="header__search-btn" aria-label="Pesquisar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+
+      <!-- Header Actions (Cart & Account) -->
+      <div class="header__actions">
+        <a href="cart.html" class="icon-btn" aria-label="Ver carrinho de compras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-7z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">2</span>
+        </a>
+
+        <a href="login.html" class="icon-btn icon-btn--account" aria-label="Minha conta de cliente">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER END -->
+
+  <!-- MOBILE DRAWER START -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Menu móvel lateral">
+    <div class="mobile-drawer__header">
+      <span class="header__brand">Dev TEES</span>
+      <button class="icon-btn" data-drawer-close aria-label="Fechar menu lateral">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer__body">
+      <form class="mobile-drawer__search" action="products.html" method="get">
+        <input type="search" name="q" placeholder="Buscar camiseta...">
+        <button type="submit" aria-label="Executar busca">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="mobile-drawer__nav">
+        <a href="home.html" class="mobile-drawer__link active">
+          <span>Início</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="products.html" class="mobile-drawer__link">
+          <span>Todos os Produtos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="products.html?categoria=oversized" class="mobile-drawer__link">
+          <span>Oversized Fit</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="products.html?categoria=classicas" class="mobile-drawer__link">
+          <span>Básicas Premium</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="orders.html" class="mobile-drawer__link">
+          <span>Meus Pedidos</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#contacto" class="mobile-drawer__link">
+          <span>Fale Conosco</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer__footer">
+      <a href="login.html" class="btn btn--primary btn--full btn--sm">Entrar na Conta</a>
+      <a href="register.html" class="btn btn--outline btn--full btn--sm">Criar Cadastro</a>
+    </div>
+  </aside>
+  <!-- MOBILE DRAWER END -->
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <!-- 1. HERO SLIDER -->
+    <section class="hero" aria-label="Destaques da coleção">
+      <div class="hero__track">
+        <!-- Slide 1 -->
+        <article class="hero__slide">
+          <img class="hero__slide-image" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1600&auto=format&fit=crop" alt="Coleção Heavyweight T-Shirt 2026" loading="eager">
+          <div class="hero__slide-overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__tag">Coleção 2026 · Edição Limitada</span>
+              <h1 class="hero__title">Heavyweight Cotton 260 GSM</h1>
+              <p class="hero__description">O padrão supremo de durabilidade, caimento estruturado e toque suave em 100% algodão biológico penteado.</p>
+              <div class="hero__cta">
+                <a href="products.html" class="btn btn--primary btn--lg">Comprar Agora</a>
+                <a href="products.html?categoria=oversized" class="btn btn--secondary btn--lg" style="color:#fff; border-color:#fff;">Explorar Linha</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="hero__slide">
+          <img class="hero__slide-image" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1600&auto=format&fit=crop" alt="Modelagem Minimal Oversized" loading="lazy">
+          <div class="hero__slide-overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__tag">Minimalismo Urbano</span>
+              <h2 class="hero__title">Oversized Boxy Silhouette</h2>
+              <p class="hero__description">Ombros caídos e proporções modernas desenhadas para versatilidade diária sem abrir mão da sofisticação.</p>
+              <div class="hero__cta">
+                <a href="products.html" class="btn btn--primary btn--lg">Comprar Agora</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="hero__slide">
+          <img class="hero__slide-image" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=1600&auto=format&fit=crop" alt="Tons Monocromáticos e Terrosos" loading="lazy">
+          <div class="hero__slide-overlay"></div>
+          <div class="container">
+            <div class="hero__content">
+              <span class="hero__tag">Paleta Terrosa & Neutra</span>
+              <h2 class="hero__title">Cores Puras. Sem Distrações.</h2>
+              <p class="hero__description">Tingimento reativo de alta fixação que preserva a intensidade do preto carvão, cru e verde sálvia lavagem após lavagem.</p>
+              <div class="hero__cta">
+                <a href="products.html" class="btn btn--primary btn--lg">Comprar Agora</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="hero__nav-btn hero__nav-btn--prev" data-hero-prev aria-label="Slide anterior">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="hero__nav-btn hero__nav-btn--next" data-hero-next aria-label="Próximo slide">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <!-- Dots Indicators -->
+      <div class="hero__dots">
+        <button class="hero__dot is-active" aria-label="Ir para slide 1" aria-current="true"></button>
+        <button class="hero__dot" aria-label="Ir para slide 2"></button>
+        <button class="hero__dot" aria-label="Ir para slide 3"></button>
+      </div>
+    </section>
+
+    <!-- 2. FAIXA DE BENEFÍCIOS -->
+    <section class="benefits" aria-label="Diferenciais da loja">
+      <div class="container">
+        <div class="benefits__grid">
+          <div class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefits__title">Entrega Expressa Luanda</h3>
+              <p class="benefits__text">Receba em 24h a 48h com rastreio total e taxa fixa.</p>
+            </div>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefits__title">Multicaixa Express & Visa</h3>
+              <p class="benefits__text">Checkout 100% blindado com confirmação imediata.</p>
+            </div>
+          </div>
+
+          <div class="benefits__item">
+            <div class="benefits__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="benefits__title">Troca Fácil em 14 Dias</h3>
+              <p class="benefits__text">Garantia total de satisfação ou troca de tamanho sem custo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PRODUTOS RECENTES -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <h2 class="section__title">Lançamentos Recentes</h2>
+            <p class="section__subtitle">As peças recém-chegadas com tiragem numerada</p>
+          </div>
+          <a href="products.html?categoria=novidades" class="section__link">
+            Ver catálogo completo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="products-grid">
+          <!-- Card 1 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Heavyweight Raw White" loading="lazy">
+              <div class="product-card__badges">
+                <span class="badge badge--dark">Novo</span>
+              </div>
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #f5f5f0;" title="Cru / Raw"></span>
+                <span class="swatch-dot" style="background-color: #111111;" title="Preto Ônix"></span>
+                <span class="swatch-dot" style="background-color: #4b5563;" title="Chumbo"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Heavyweight Raw Boxy</a>
+              <span class="product-card__meta">100% Algodão 260g</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">18.500 Kz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Oversized Midnight Black" loading="lazy">
+              <div class="product-card__badges">
+                <span class="badge badge--discount">-15%</span>
+              </div>
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #111111;" title="Preto Noite"></span>
+                <span class="swatch-dot" style="background-color: #3f3f46;" title="Grafite"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Oversized Midnight Deep</a>
+              <span class="product-card__meta">Corte Reto Estruturado</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">17.000 Kz</span>
+                <span class="product-card__price--old">20.000 Kz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Essential Crewneck Olive" loading="lazy">
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #4d5c4b;" title="Verde Oliva"></span>
+                <span class="swatch-dot" style="background-color: #9c8e7d;" title="Areia"></span>
+                <span class="swatch-dot" style="background-color: #111111;" title="Preto"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Essential Crew Olive</a>
+              <span class="product-card__meta">Algodão Pima 190g</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">15.500 Kz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Minimalist Graphic Front" loading="lazy">
+              <div class="product-card__badges">
+                <span class="badge badge--dark">Novo</span>
+              </div>
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #1a1a1a;" title="Preto Vintage"></span>
+                <span class="swatch-dot" style="background-color: #eae6df;" title="Branco Sujo"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Typo Studio Atelier</a>
+              <span class="product-card__meta">Estampa Serigráfica Discreta</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">19.500 Kz</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BANNER / CTA CATEGORIAS -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="category-banner">
+          <article class="category-banner__card">
+            <img class="category-banner__bg" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1000&auto=format&fit=crop" alt="Linha Heavyweight" loading="lazy">
+            <div class="category-banner__overlay"></div>
+            <div class="category-banner__content">
+              <h3 class="category-banner__title">Linha Heavyweight</h3>
+              <p class="category-banner__text">Malha encorpada com gramatura de 260g para quem valoriza caimento impecável.</p>
+              <a href="products.html?categoria=heavyweight" class="btn btn--primary btn--sm">Ver Coleção Heavy</a>
+            </div>
+          </article>
+
+          <article class="category-banner__card">
+            <img class="category-banner__bg" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000&auto=format&fit=crop" alt="Linha Oversized Fit" loading="lazy">
+            <div class="category-banner__overlay"></div>
+            <div class="category-banner__content">
+              <h3 class="category-banner__title">Linha Boxy & Oversized</h3>
+              <p class="category-banner__text">O clássico corte descontraído da cultura streetwear com acabamento de alta costura.</p>
+              <a href="products.html?categoria=oversized" class="btn btn--primary btn--sm">Ver Coleção Oversized</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. MAIS VENDIDOS -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <h2 class="section__title">Mais Vendidos da Temporada</h2>
+            <p class="section__subtitle">As escolhas favoritas da nossa comunidade</p>
+          </div>
+          <a href="products.html?categoria=mais-vendidos" class="section__link">
+            Explorar todos os itens
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="products-grid">
+          <!-- Card 5 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Pure White Basic" loading="lazy">
+              <div class="product-card__badges">
+                <span class="badge badge--dark">Top 1</span>
+              </div>
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #ffffff;" title="Branco Neve"></span>
+                <span class="swatch-dot" style="background-color: #111111;" title="Preto Ônix"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Pure White Classic</a>
+              <span class="product-card__meta">Gola Canelada 2.5cm</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">14.500 Kz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Charcoal Washed" loading="lazy">
+              <div class="product-card__badges">
+                <span class="badge badge--discount">-20%</span>
+              </div>
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #374151;" title="Carvão"></span>
+                <span class="swatch-dot" style="background-color: #111111;" title="Preto"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Vintage Washed Acid</a>
+              <span class="product-card__meta">Lavagem Mineral Exclusiva</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">16.000 Kz</span>
+                <span class="product-card__price--old">20.000 Kz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Desert Sand Fit" loading="lazy">
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #d2c6b2;" title="Areia do Deserto"></span>
+                <span class="swatch-dot" style="background-color: #61574a;" title="Terra"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Desert Sand Relaxed</a>
+              <span class="product-card__meta">Algodão Penteado 220g</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">17.500 Kz</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="product-card">
+            <a href="productview.html" class="product-card__media">
+              <img class="product-card__img" src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800&auto=format&fit=crop" alt="T-Shirt Monochrome Minimal" loading="lazy">
+              <div class="product-card__quick-add">
+                <span class="btn btn--primary btn--sm btn--full">Ver Detalhes</span>
+              </div>
+            </a>
+            <div class="product-card__info">
+              <div class="product-card__swatches">
+                <span class="swatch-dot" style="background-color: #111111;" title="Preto Total"></span>
+                <span class="swatch-dot" style="background-color: #e5e7eb;" title="Cinza Claro"></span>
+              </div>
+              <a href="productview.html" class="product-card__title">T-Shirt Core Monochrome Box</a>
+              <span class="product-card__meta">Costura Dupla Reforçada</span>
+              <div class="product-card__prices">
+                <span class="product-card__price">15.000 Kz</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. RECEBER NOTIFICAÇÕES (NEWSLETTER) -->
+    <section class="section newsletter">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2 class="newsletter__title">Privilégios & Drops Exclusivos</h2>
+          <p class="newsletter__desc">Subscreva para receber acesso antecipado a reposições de stock e lançamentos de edições numeradas.</p>
+          <form class="newsletter__form" action="#" method="post" onsubmit="event.preventDefault();">
+            <input type="email" class="newsletter__input" placeholder="Seu melhor endereço de e-mail" required aria-label="Endereço de e-mail">
+            <button type="submit" class="btn btn--primary">Subscrever</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER START -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Coluna 1: Marca & Descrição -->
+        <div>
+          <div class="footer__brand">DEV TEES</div>
+          <p class="footer__brand-desc">
+            Camisetas concebidas sob rigor técnico, caimento perfeito e estética minimalista em Angola. Criadas para durar estações.
+          </p>
+          <div class="footer__socials">
+            <a href="https://instagram.com" class="footer__social-link" aria-label="Instagram da DEV TEES" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="footer__social-link" aria-label="Facebook da DEV TEES" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://wa.me" class="footer__social-link" aria-label="WhatsApp da DEV TEES" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Links Rápidos -->
+        <div>
+          <h4 class="footer__col-title">Coleções</h4>
+          <ul class="footer__links">
+            <li><a href="products.html" class="footer__link">Todos os Modelos</a></li>
+            <li><a href="products.html?categoria=heavyweight" class="footer__link">Heavyweight 260g</a></li>
+            <li><a href="products.html?categoria=oversized" class="footer__link">Oversized Boxy</a></li>
+            <li><a href="products.html?categoria=basicas" class="footer__link">Essenciais Básicas</a></li>
+            <li><a href="products.html?categoria=promocoes" class="footer__link">Arquivo / Ofertas</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Ajuda & Suporte -->
+        <div>
+          <h4 class="footer__col-title">Atendimento</h4>
+          <ul class="footer__links">
+            <li><a href="orders.html" class="footer__link">Acompanhar Pedido</a></li>
+            <li><a href="#" class="footer__link">Guia de Tamanhos</a></li>
+            <li><a href="#" class="footer__link">Política de Trocas</a></li>
+            <li><a href="#" class="footer__link">Envios para Províncias</a></li>
+            <li><a href="#" class="footer__link">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contactos & Localização -->
+        <div>
+          <h4 class="footer__col-title">Showroom & Contacto</h4>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Rua Rainha Ginga, Edifício Kilamba, Luanda, Angola</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>+244 923 000 111 / +244 945 222 333</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>atendimento@kwanzatees.ao</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 DEV TEES. Todos os direitos reservados. Feito com rigor em Angola.</p>
+        <div class="footer__payments">
+          <span class="payment-badge">Multicaixa Express</span>
+          <span class="payment-badge">Visa</span>
+          <span class="payment-badge">Transferência Bancária</span>
+          <span class="payment-badge">Pagamento na Entrega</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- BOTTOM NAV START -->
+  <nav class="bottom-nav" aria-label="Navegação inferior mobile">
+    <a href="home.html" class="bottom-nav__item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      <span>Início</span>
+    </a>
+    <a href="products.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="7" height="7"></rect>
+        <rect x="14" y="3" width="7" height="7"></rect>
+        <rect x="14" y="14" width="7" height="7"></rect>
+        <rect x="3" y="14" width="7" height="7"></rect>
+      </svg>
+      <span>Produtos</span>
+    </a>
+    <a href="cart.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-7z"></path>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <path d="M16 10a4 4 0 0 1-8 0"></path>
+      </svg>
+      <span class="bottom-nav__badge">2</span>
+      <span>Carrinho</span>
+    </a>
+    <a href="orders.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <polyline points="14 2 14 8 20 8"></polyline>
+        <line x1="16" y1="13" x2="8" y2="13"></line>
+        <line x1="16" y1="17" x2="8" y2="17"></line>
+        <polyline points="10 9 9 9 8 9"></polyline>
+      </svg>
+      <span>Pedidos</span>
+    </a>
+    <a href="login.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+      <span>Conta</span>
+    </a>
+  </nav>
+  <!-- BOTTOM NAV END -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
