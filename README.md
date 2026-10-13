@@ -14,12 +14,6 @@
   <img alt="Stars" src="https://img.shields.io/badge/Stars-GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
 </p>
 
-<img
-  src="https://media1.giphy.com/media/RETzc1mj7HpZPuNf3e/giphy.gif"
-  alt="DEV TEES animation"
-  width="100%"
-/>
-
 <p align="center">
   I built DEV TEES as the storefront I wanted when I started an online shop: a clean, minimal apparel layout in plain HTML, CSS, and JavaScript. I left the backend out on purpose. Drop these pages onto PHP, Go, Node, Java, or any other stack, bind them to your catalog, and you have a shop.
 </p>
@@ -158,3 +152,10 @@ If DEV TEES saves you a weekend of layout work, you can buy me a coffee. ☕
     />
   </a>
 </p>
+
+<img
+  src="https://media1.giphy.com/media/RETzc1mj7HpZPuNf3e/giphy.gif"
+  alt="DEV TEES animation"
+  width="100%"
+/>
+
