@@ -145,7 +145,5 @@ A practical split:
 If DEV TEES saves you a weekend of layout work, you can buy me a coffee. ☕
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/claudio.dev">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=claudio.dev&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy me a coffee" height="48">
-  </a>
+ <a href="https://www.buymeacoffee.com/claudio.dev"><img src="https://img.buymeacoffee.com/button-api/?text=Compre-me um café&emoji=&slug=claudio.dev&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
 </p>
