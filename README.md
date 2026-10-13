@@ -14,8 +14,8 @@
   <img alt="Stars" src="https://img.shields.io/badge/Stars-GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
 </p>
 
-f
-<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmxyNDFtb3piemQ4cmhjbXllcnMweHR4b2luMGIzbzd0a2tsMGVmOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RETzc1mj7HpZPuNf3e/giphy.gi"/>
+<img src="https://img.buymeacoffee.com/button-api/?text=Compre-me um café&emoji=&slug=claudio.dev&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
+
 <p align="center">
   I built DEV TEES as the storefront I wanted when I started an online shop: a clean, minimal apparel layout in plain HTML, CSS, and JavaScript. I left the backend out on purpose. Drop these pages onto PHP, Go, Node, Java, or any other stack, bind them to your catalog, and you have a shop.
 </p>
